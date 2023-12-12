@@ -1,0 +1,52 @@
+.bg-img {
+  background-image: url(../../Image/background-img.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 472px;
+  width: 100%;
+}
+
+.title {
+  width: 70%;
+  color: #bfbebe;
+  font-family: Nunito Sans;
+  margin: 31px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.title-half {
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.menu {
+  width: 30%;
+  color: #bfbebe;
+  font-family: Nunito Sans;
+  margin: 31px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.tag-line {
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.btn-font {
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}

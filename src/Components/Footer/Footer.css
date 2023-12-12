@@ -1,0 +1,22 @@
+.footer-background {
+  height: 305px;
+  background: #1e1e1e;
+}
+
+.footer-menu {
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 31px;
+}
+
+.footer-content {
+  width: 623px;
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}

@@ -1,0 +1,38 @@
+.cart-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 516px;
+  height: 1720px;
+  background: #d9d9d9;
+  z-index: 10;
+}
+
+.cart-title {
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.shopping-cart-title {
+  color: var(--Tertiary---Black, #131414);
+  font-family: Noto Serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  color: #131414;
+}
+
+.store-img {
+  width: 180px;
+}
+
+.cart-item-header {
+  color: var(--Tertiary---Black, #131414);
+  font-family: Noto Serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
