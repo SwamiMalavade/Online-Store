@@ -7,6 +7,7 @@ import axios from "./instance";
 import Footer from "./Components/Footer/Footer";
 import { CartProvider } from "react-use-cart";
 import { Spinner } from "./Components/Spinner/Spinner";
+import { Pagination } from "./Components/Pagination/Pagination";
 
 function App() {
   const [selectedMaterial, setSelectedMaterial] = useState();
@@ -15,6 +16,13 @@ function App() {
   const [materials, setMaterials] = useState([]);
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage, setPostsPerPage] = useState(6);
+
+  const lastPostIndex = currentPage * postsPerPage;
+  const firstPostIndex = lastPostIndex - postsPerPage;
+  const currentPosts = filteredProducts.slice(firstPostIndex, lastPostIndex);
 
   useEffect(() => {
     if (selectedColor) {
@@ -121,7 +129,7 @@ function App() {
               </div>
               <div style={{ width: "80%" }}>
                 <MenuSection
-                  products={filteredProducts}
+                  products={currentPosts}
                   colors={colors}
                   materials={materials}
                 />
@@ -131,6 +139,11 @@ function App() {
         ) : (
           <Spinner />
         )}
+        <Pagination
+          totalPosts={filteredProducts?.length}
+          postsPerPage={postsPerPage}
+          setCurrentPage={setCurrentPage}
+        />
         <Footer />
       </CartProvider>
     </>
